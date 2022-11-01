@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h1> Hand Gestures </h1>
+
+      <br><br>
+
+      <b style="color: rgb(255, 0, 179)">   Take a selfie  </b>
+      <b style="color: rgb(0, 145, 255)"> of any below   </b>
+      <b style="color: rgb(255, 221, 0)"> HAND GESTURES</b>
+         	<br>
+        <span>&#9996;</span> 
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#129304;</span>
+        <span>&#128400;</span>
+        <span>&#9757;</span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View</label>
+        <div id="Camera"></div>
+        <br>
+        <button class="btn btn-danger" onclick="Camera()">Capture Picture</button>
+      </div>
+    
+      <div id="result" class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1</label>
+        <p id="prediction1"></p>
+        <p id="emoji1"></p>
+        <br> <br>
+        <br> <br>
+        <label>Prediction 2</label>
+        <p id="prediction2"></p>
+        <p id="emoji2"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot</label>
+        <div id="camera"></div>
+        <br>
+        <button class="btn btn-danger" onclick="Camera()">Generate Emoji</button>
+      </div>
+
+      
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
